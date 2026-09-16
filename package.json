@@ -1,58 +1,12 @@
 {
-  "type": "module",
-  "private": true,
-  "author": {
-    "name": "GameToolStudio",
-    "url": "https://GameToolStudio.com"
-  },
-  "license": "MIT",
-  "engines": {
-    "node": ">=18"
-  },
-  "scripts": {
-    "build": "nuxt build",
-    "dev": "nuxt dev",
-    "generate": "nuxt generate",
-    "preview": "nuxt preview",
-    "postinstall": "nuxt prepare && npx simple-git-hooks",
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
-  },
-  "dependencies": {
-    "@hellocoop/vue": "^2.1.9",
-    "@mdi/font": "^7.1.96",
-    "@pinia/nuxt": "^0.4.11",
-    "@types/node": "^20.11.17",
-    "axios": "^1.5.0",
-    "big.js": "^6.2.1",
-    "chart.js": "^4.4.0",
-    "countries-list": "^2.6.1",
-    "debug": "^4.3.4",
-    "express": "^4.18.2",
-    "mande": "^2.0.7",
-    "nitropack": "^2.8.1",
-    "pinia": "^2.1.6",
-    "sass": "^1.58.0",
-    "thirdweb": "^5.46.0",
-    "vat-moss": "^1.0.2",
-    "vite-plugin-node-polyfills": "^0.19.0",
-    "vue-chartjs": "^5.2.0",
-    "vue-spinner": "^1.0.4",
-    "vuetify": "^3.3.15",
-    "web3": "^4.3.0"
-  },
-  "devDependencies": {
-    "@antfu/eslint-config": "^2.6.4",
-    "@types/debug": "^4.1.12",
-    "eslint": "^8.57.0",
-    "lint-staged": "^15.2.2",
-    "nuxt": "^3.8.2",
-    "simple-git-hooks": "^2.9.0"
-  },
-  "simple-git-hooks": {
-    "pre-commit": "npx lint-staged"
-  },
-  "lint-staged": {
-    "*": "eslint"
-  }
+    "name": "rmmz-game",
+    "main": "index.html",
+    "chromium-args": "--force-color-profile=srgb --disable-devtools",
+    "window": {
+        "title": "#{GameTitle}",
+        "width": 1280,
+        "height": 720,
+        "position": "center",
+        "icon": "icon/icon.png"
+    }
 }
